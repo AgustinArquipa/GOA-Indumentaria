@@ -1,4 +1,5 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram not</help_text><element><id>UMLClass</id><coordinates><x>70</x><y>0</y><w>230</w><h>280</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram not
+</help_text><element><id>UMLClass</id><coordinates><x>70</x><y>0</y><w>230</w><h>280</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
 Producto
 {Some Properties}
 --
