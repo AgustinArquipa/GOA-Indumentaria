@@ -1,40 +1,41 @@
 <diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram not
-</help_text><element><id>UMLClass</id><coordinates><x>70</x><y>0</y><w>230</w><h>280</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
+</help_text><element><id>UMLClass</id><coordinates><x>70</x><y>0</y><w>240</w><h>280</h></coordinates><panel_attributes>&lt;&lt;Stereotype&gt;&gt;
 Producto
 {Some Properties}
 --
 - fechaVenta: datetime
-- id: long
-- descripcion: string
+- id: int
+- nombre: string
 - metDePago: Pagos
-
-- precio: double o float
-
+- talle: string
+- marca: string
+- disponlibe: boolean
+- precio: long
+- temporada: string
 --
 
 #Constructor(fecha, descrp, precio): void
+#Getters y Setters
 /+elejirMetodoDePago(): -&gt; void
 /+devolverPrecioCalculado(): -&gt; double
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>520</x><y>40</y><w>150</w><h>110</h></coordinates><panel_attributes>el ID tiene que ser el
-codigo unioc, tendria 
+codigo unico, tendria 
 que ser como un
 unicode. Codigo
 Unico
 Pensar en Mejora
-bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>50</y><w>330</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;310;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>530</x><y>160</y><w>140</w><h>80</h></coordinates><panel_attributes>Para la descripcion
-especificamos de que 
-producto trata. Por ej
-una remera over de
-tal marca
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>50</y><w>330</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;310;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>530</x><y>160</y><w>160</w><h>50</h></coordinates><panel_attributes>Nombre seria como por 
+ej remera azul
 bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>70</y><w>360</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;-
 </panel_attributes><additional_attributes>10;20;290;20;290;110;340;110</additional_attributes></element><element><id>UMLNote</id><coordinates><x>450</x><y>370</y><w>140</w><h>70</h></coordinates><panel_attributes>Tenemos que manejar
 diferentes metodos de
 pago, seria hacer una
 clase aparte??
-bg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>520</x><y>250</y><w>140</w><h>70</h></coordinates><panel_attributes>Buscar cual es la mejor
-mejor manera para
-manejar precios.
-bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>330</y><w>230</w><h>130</h></coordinates><panel_attributes>Pagos
+bg=pink</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>530</x><y>230</y><w>250</w><h>70</h></coordinates><panel_attributes>Tenemos un atributo booleano
+cuando hacemos la funcion HACERVENTA 
+cambiamos el estado del atributo y aca
+entra la relacion Stock y Caja
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>330</y><w>230</w><h>130</h></coordinates><panel_attributes>Pagos
 --
 - Precio: double
 
@@ -51,9 +52,7 @@ bg=blue</panel_attributes><additional_attributes></additional_attributes></eleme
 - descuento: int
 
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>100</y><w>330</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
-a rose is a rose
-</panel_attributes><additional_attributes>10;10;230;10;230;210;60;210;60;240</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>450</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>500</y><w>120</w><h>90</h></coordinates><panel_attributes>Tarjeta de Credito
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>190</x><y>100</y><w>250</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;230;10;230;210;60;210;60;240</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>450</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>500</y><w>120</w><h>90</h></coordinates><panel_attributes>Tarjeta de Credito
 --
 - interes: int
 
